@@ -1,0 +1,110 @@
+
+package inicioproyecto;
+
+public class INICIOPROYECTO {
+
+    public static void main(String[] args) {
+        int Cont_No_Peruanos = 0;
+        int Suma_edades = 0;
+        double Promedio_edades = 0;
+        String[] Nombre = { "Tatiana","Alvaro","Gema","Hector","Rita","Maria","Antonio","Lorenzo","Ovidio","Bartolome","Valerio","Faustino","Felipe","Anselmo","Pedro","Gustavo","Alberto","Alexandra","Felipe","Nydia"};
+        String[] Apellidos = { "Perez", "Moran", "de Heras", "Rocha", "Fuentes", "Bilbao", "Baquero", "Tena", "Gras", "Rojas", "Bustamante", "Rojas", "Torres", "Cuevas", "Riba", "Fuentes", "Perez", "Somoza", "Saavedra", "Torres"};
+        String[] Fecha_ingreso = { "2025-06-01","2025-05-31","2025-05-18","2025-06-06","2025-05-30","2025-05-24","2025-05-21","2025-06-04","2025-05-24","2025-06-13","2025-06-09","2025-06-11","2025-05-18","2025-05-19","2025-06-06","2025-05-25","2025-05-20","2025-06-14","2025-05-23","2025-05-24"};
+        String[] Fecha_alta = { "2025-06-01","2025-06-08","2025-06-03","2025-06-13","2025-06-06","2025-05-25","2025-05-29","2025-06-06","2025-06-09","2025-06-13","2025-06-12","2025-06-15","2025-05-21","2025-05-25","2025-06-12","2025-06-05","2025-06-10","2025-06-14","2025-06-12","2025-05-29"};
+        int[] DNI = { 26443090, 97419579, 49848056, 17466894, 20826157, 62321402, 42682083, 45729312, 36224613, 54409395, 19782284, 20404889, 24481982, 13229247, 12020183, 18217216, 58570891, 93923322, 63023488, 36286039};
+        int[] Numero = {991234567, 951112233, 912345678, 924567891, 935678123, 946781235, 954789612, 987456321, 918273645, 900112233, 932165478, 976432180, 988111222, 951273648, 964561237, 900654321, 977654321, 987120954, 943287154, 955789642};
+        int[] Edad = { 32, 21, 53, 51, 42, 65, 46, 45, 69, 26, 52, 31, 59, 26, 57, 46, 87, 70, 41, 48};
+        double[] Temperatura = { 38.6, 36.1, 36.5, 36.3, 39, 38.2, 37.4, 36.5, 36.3, 36.9, 37.6, 37.3, 36.8, 36.9, 36.4, 39.2, 38.7, 38.5, 38.8, 39};
+        double[] Altura = { 1.53, 1.72, 1.65, 1.85, 1.75, 1.68, 1.73, 1.8, 1.75, 1.77, 1.89, 1.87, 1.53, 1.87, 1.74, 1.61, 1.76, 1.71, 1.9, 1.89};
+        double[] Peso = { 94.6, 82.5, 55.1, 81.4, 63.9, 62.2, 95.7, 76.9, 55.5, 97.1, 86, 97.7, 78.4, 98.2, 66.9, 75.7, 54.7, 59.6, 52.5, 68.9};
+        String[] Presion = { "133/83", "102/82", "138/70", "108/86", "96/72", "124/83", "94/66", "137/77", "93/87", "125/87", "136/88", "100/77", "105/88", "128/73", "104/62", "111/62", "116/66", "96/67", "125/63", "93/65"};
+        String[] Direccion = { "Av. Brasil 1540", "Jr. Los Andes 340", "Av. Bolivar 810", "Jr. Huancavelica 450", "Av. Grau 902", "Calle Ayacucho 115", "Jr. Callao 400", "Av. Arequipa 235", "Av. San Felipe 912", "Calle Piura 140", "Jr. Moquegua 310", "Av. Javier Prado 220", "Calle San Martín 73", "Jr. Lampa 560", "Av. Venezuela 1040", "Jr. Ilo 110", "Av. Tomas Marsano 444", "Calle Tarata 232", "Jr. Junin 521", "Calle Manuel Segura 19"};
+        String[] Nacionalidad = { "Peruano", "Peruano", "Peruano", "Venezolano", "Peruano", "Peruano", "Peruano", "Peruano", "Peruano", "Peruano", "Peruano", "Peruano", "Peruano", "Venezolano", "Peruano", "Peruano", "Peruano", "Peruano", "Peruano", "Venezolano"};
+        String[] Genero = { "Masculino", "Masculino", "Masculino", "Masculino", "Masculino", "Femenino", "Femenino", "Femenino", "Femenino", "Femenino", "Femenino", "Femenino", "Femenino", "Masculino", "Femenino", "Masculino", "Masculino", "Femenino", "Femenino", "Masculino"};
+        String[] Cirugias_previas = { "No", "No", "Histerectomia", "No", "Cesarea", "No", "Hernia", "No", "No", "No", "No", "Apendicectomia", "Miomectomia", "No", "No", "No", "Protesis de cadera", "Cirugia de vesicula", "No", "No"};
+        String[] Diagnostico = { "Hipertension", "Diabetes", "Diabetes", "Asma", "Gripe", "Diabetes", "Gripe", "Asma", "Diabetes", "Asma", "Gripe", "COVID-19", "Gripe", "Diabetes", "Hipertension", "Gripe", "COVID-19", "Gripe", "Asma", "Asma"};
+        String[] Tratamiento = { "Insulina", "Insulina", "Inhaladores", "Oxigeno", "Insulina", "Antibioticos", "Insulina", "Inhaladores", "Insulina", "Oxigeno", "Antibioticos", "Oxigeno", "Reposo", "Inhaladores", "Inhaladores", "Reposo", "Oxigeno", "Reposo", "Insulina", "Inhaladores"};
+        String[] Medicamentos = { "Ibuprofeno", "Remdesivir", "Metformina", "Paracetamol", "Metformina", "Paracetamol", "Paracetamol", "Ibuprofeno", "Remdesivir", "Salbutamol", "Salbutamol", "Ibuprofeno", "Metformina", "Remdesivir", "Remdesivir", "Ibuprofeno", "Salbutamol", "Paracetamol", "Paracetamol", "Salbutamol"};
+        String[] Doctor_asignado = { "Dra. Martinez", "Dr. Torres", "Dr. Gomez", "Dra. Fernandez", "Dr. Perez", "Dr. Torres", "Dr. Gomez", "Dr. Gomez", "Dra. Fernandez", "Dr. Torres", "Dra. Martinez", "Dra. Martinez", "Dr. Gomez", "Dra. Martinez", "Dra. Fernandez", "Dr. Perez", "Dra. Martinez", "Dra. Fernandez", "Dra. Fernandez", "Dra. Martinez"};
+        String[] Seguro = { "Publico", "Privado", "Publico", "Publico", "Publico", "Publico", "Ninguno", "Publico", "Ninguno", "Privado", "Privado", "Privado", "Ninguno", "Ninguno", "Privado", "Publico", "Publico", "Privado", "Privado", "Publico"};
+        String[] Habitacion = { "Hab-2", "Hab-15", "Hab-12", "Hab-19", "Hab-6", "Hab-18", "Hab-11", "Hab-19", "Hab-14", "Hab-18", "Hab-17", "Hab-20", "Hab-16", "Hab-7", "Hab-19", "Hab-7", "Hab-14", "Hab-14", "Hab-3", "Hab-15"};
+        
+        
+        // Cantidad de personas que tienen nacionalidad diferente a la peruana
+        
+        for (int i=0 ; i<Nacionalidad.length; i++){
+            if (!Nacionalidad[i].equals("Peruano")){
+                Cont_No_Peruanos = Cont_No_Peruanos+1;
+            }
+        }
+        //System.out.println("numero de personas no peruanas: "+ Cont_No_Peruanos);
+        
+        //Promedio de la edad de las personas
+        
+        for (int i=0; i<Edad.length; i++){
+            Suma_edades = Suma_edades + Edad[i];
+            Promedio_edades = Suma_edades/Edad.length;
+        }
+        //System.out.println("suma de edades: "+ Suma_edades);
+        //System.out.println("promedio de edades: "+ Promedio_edades);
+        
+        
+        
+        
+        
+        
+        /*
+                
+        ARREGLO BIDIMENSIONAL 
+        double [][] matriz_numeros = {
+            {20250601, 20250601, 26443090, 991234567, 32, 38.6, 94.6, 1.53},
+            {20250531, 20250608, 97419579, 951112233, 21, 36.1, 82.5, 1.72},
+            {20250518, 20250603, 49848056, 912345678, 53, 36.5, 55.1, 1.65},
+            {20250606, 20250613, 17466894, 924567891, 51, 36.3, 81.4, 1.85},
+            {20250530, 20250606, 20826157, 935678123, 42, 39.0, 63.9, 1.75},
+            {20250524, 20250525, 62321402, 946781235, 65, 38.2, 62.2, 1.68},
+            {20250521, 20250529, 42682083, 954789612, 46, 37.4, 95.7, 1.73},
+            {20250604, 20250606, 45729312, 987456321, 45, 36.5, 76.9, 1.80},
+            {20250524, 20250609, 36224613, 918273645, 69, 36.3, 55.5, 1.75},
+            {20250613, 20250613, 54409395, 900112233, 26, 36.9, 97.1, 1.77},
+            {20250609, 20250612, 19782284, 932165478, 52, 37.6, 86.0, 1.89}, 
+            {20250611, 20250615, 20404889, 976432180, 31, 37.3, 97.7, 1.87},
+            {20250518, 20250521, 24481982, 988111222, 59, 36.8, 78.4, 1.53},
+            {20250519, 20250525, 13229247, 951273648, 26, 36.9, 98.2, 1.87},
+            {20250606, 20250612, 12020183, 964561237, 57, 36.4, 66.9, 1.74},
+            {20250525, 20250605, 18217216, 900654321, 46, 39.2, 75.7, 1.61},
+            {20250520, 20250610, 58570891, 977654321, 87, 38.7, 54.7, 1.76},
+            {20250614, 20250614, 93923322, 987120954, 70, 38.5, 59.6, 1.71},
+            {20250523, 20250612, 63023488, 943287154, 41, 38.8, 52.5, 1.90},
+            {20250524, 20250529, 36286039, 955789642, 48, 39.0, 68.9, 1.89}
+        };
+        ARREGLO BIDIMENSIONAL
+        String [][] matriz_textos = {
+            {"133/83", "Av. Brasil 1540", "Peruana", "Masculino", "No", "Hipertensión", "Insulina", "Ibuprofeno", "Dra. Martínez", "Público", "Hab-2"},
+            {"102/82", "Jr. Los Andes 340", "Peruano", "Masculino", "No", "Diabetes", "Insulina", "Remdesivir", "Dr. Torres", "Privado", "Hab-15"},
+            {"138/70", "Av. Bolívar 810", "Peruana", "Masculino", "Histerectomía", "Diabetes", "Inhaladores", "Metformina", "Dr. Gómez", "Público", "Hab-12"},
+            {"108/86", "Jr. Huancavelica 450", "Venezolano", "Masculino", "No", "Asma", "Oxígeno", "Paracetamol", "Dra. Fernández", "Público", "Hab-19"},
+            {"96/72", "Av. Grau 902", "Peruana", "Masculino", "Cesárea", "Gripe", "Insulina", "Metformina", "Dr. Pérez", "Público", "Hab-6"},
+            {"124/83", "Calle Ayacucho 115", "Peruana", "Femenino", "No", "Diabetes", "Antibióticos", "Paracetamol", "Dr. Torres", "Público", "Hab-18"},
+            {"94/66", "Jr. Callao 400", "Peruano", "Femenino", "Hernia", "Gripe", "Insulina", "Paracetamol", "Dr. Gómez", "Ninguno", "Hab-11"},
+            {"137/77", "Av. Arequipa 235", "Peruano", "Femenino", "No", "Asma", "Inhaladores", "Ibuprofeno", "Dr. Gómez", "Público", "Hab-19"},
+            {"93/87", "Av. San Felipe 912", "Peruano", "Femenino", "No", "Diabetes", "Insulina", "Remdesivir", "Dra. Fernández", "Ninguno", "Hab-14"},
+            {"125/87", "Calle Piura 140", "Peruano", "Femenino", "No", "Asma", "Oxígeno", "Salbutamol", "Dr. Torres", "Privado", "Hab-18"},
+            {"136/88", "Jr. Moquegua 310", "Peruano", "Femenino", "No", "Gripe", "Antibióticos", "Salbutamol", "Dra. Martínez", "Privado", "Hab-17"},
+            {"100/77", "Av. Javier Prado 220", "Peruano", "Femenino", "Apendicectomía", "COVID-19", "Oxígeno", "Ibuprofeno", "Dra. Martínez", "Privado", "Hab-20"},
+            {"105/88", "Calle San Martín 73", "Peruano", "Femenino", "Miomectomía", "Gripe", "Reposo", "Metformina", "Dr. Gómez", "Ninguno", "Hab-16"},
+            {"128/73", "Jr. Lampa 560", "Venezolano", "Masculino", "No", "Diabetes", "Inhaladores", "Remdesivir", "Dra. Martínez", "Ninguno", "Hab-7"},
+            {"104/62", "Av. Venezuela 1040", "Peruano", "Femenino", "No", "Hipertensión", "Inhaladores", "Remdesivir", "Dra. Fernández", "Privado", "Hab-19"},
+            {"111/62", "Jr. Ilo 110", "Peruano", "Masculino", "No", "Gripe", "Reposo", "Ibuprofeno", "Dr. Pérez", "Público", "Hab-7"},
+            {"116/66", "Av. Tomás Marsano 444", "Peruano", "Masculino", "Prótesis de cadera", "COVID-19", "Oxígeno", "Salbutamol", "Dra. Martínez", "Público", "Hab-14"},
+            {"96/67", "Calle Tarata 232", "Peruana", "Femenino", "Cirugía de vesícula", "Gripe", "Reposo", "Paracetamol", "Dra. Fernández", "Privado", "Hab-14"},
+            {"125/63", "Jr. Junín 521", "Peruano", "Femenino", "No", "Asma", "Insulina", "Paracetamol", "Dra. Fernández", "Privado", "Hab-3"},
+            {"93/65", "Calle Manuel Segura 19", "Venezolana", "Masculino", "No", "Asma", "Inhaladores", "Salbutamol", "Dra. Martínez", "Público", "Hab-15"},
+        };
+        
+        System.out.println("El paciente " + Nombre[0] + " tiene " + Presion[0] + " de presion");
+        
+        */
+        
+    }
+}
